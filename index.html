@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pop A Balloon</title>
+</head>
+
+<body>
+    <div id="form">
+        <div id="login-box" class="hide">
+            <p id="error" style="color: red;"></p>
+            <br>
+            <span id="sign-up" class="hide">
+                Username*
+                <br>
+                <br>
+                <input type="text" id="username">
+            </span>
+            <br>
+            <br>
+            Email*
+            <br>
+            <br>
+            <input type="email" id="email">
+            <br>
+            <br>
+            Password*
+            <br>
+            <br>
+            <input type="password" id="password">
+        </div>
+        <div id="buttons" align="center" style="margin-top: 20%;">
+            <button id="back" class="hide" style="background-color: red;" onclick="location.reload()">Back</button>
+            <button id="login" onclick="login()">Login</button>
+            <button id="signup" onclick="signup()" style="background-color: darkorange;">Signup</button>
+        </div>
+    </div>
+    <div id="game" style="display: none;">
+        <fieldset id="container">
+       </fieldset>
+        <div id="game-sidebar">
+            <div id="levels"></div>
+            <div id="score"></div>
+            <div id="lifes"></div>
+            <div id="highest-score"></div>
+            <div id="last-logged"></div>
+            <button id="start-game" onclick="startGame()">Start Game</button>
+            <button id="logout" class="hide" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

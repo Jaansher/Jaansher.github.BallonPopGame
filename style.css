@@ -1,0 +1,76 @@
+/* Login */
+#login-box{
+    margin: 10% 30%;
+    color: grey;
+}
+
+#login-box input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.638);
+    width: 100%;
+    color: #000;
+}
+.hide{
+    display: none;
+}
+#buttons button,#logout,#start-game{
+    color: white;
+    background-color: royalblue;
+    border: none;
+    padding: 10px 25px;
+    margin: 2%;
+}
+#logout{
+    background-color: red;
+}
+/* Game */
+#game{
+    display: flex;
+    align-items: flex-end;
+}
+#game-sidebar{
+    display: flex;
+    width: 13%;
+    align-items: center;
+    flex-direction: column;
+}
+#container{
+    display: flex;
+    width: 85%;
+    height: 38em;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+#container div{
+    margin: 4%;
+    width: 7%;
+    height: 80px;
+    border-radius: 3em;
+}
+.pop{
+    font-size: 30px;
+    position: relative;
+    top: 25px;
+}
+#levels{
+    margin-bottom: 25px
+}
+#score{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+#lifes{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+#highest-score{
+    font-size: 19px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#container b{
+    font-size: 50px;
+    margin-left: 37%;
+}
